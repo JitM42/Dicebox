@@ -1,13 +1,173 @@
 {
-    "atomType": "Molecule",
-    "x": 0,
-    "y": 0,
-    "uniqueID": "id-1",
-    "name": "Dicebox",
-    "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
-    "unitsKey": "MM",
-    "fileTypeVersion": 1,
-    "filetypeVersion": 1
+  "atomType": "Molecule",
+  "x": 0,
+  "y": 0,
+  "uniqueID": "id-1",
+  "name": "Dicebox",
+  "ioValues": [
+    {
+      "name": "Material_thickness",
+      "ioValue": 5
+    },
+    {
+      "name": "Dice_size",
+      "ioValue": 16
+    }
+  ],
+  "topLevel": true,
+  "allAtoms": [
+    {
+      "atomType": "Output",
+      "x": 0.98,
+      "y": 0.5,
+      "uniqueID": "id-2",
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.6259168704156479,
+      "uniqueID": "id-4",
+      "name": "Material_thickness"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.0231,
+      "y": 0.36430317848410754,
+      "uniqueID": "id-7",
+      "name": "Dice_size"
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.19947916666666665,
+      "y": 0.3985330073349633,
+      "uniqueID": "id-10",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 16
+        },
+        {
+          "name": "y length",
+          "ioValue": 16
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.21875,
+      "y": 0.6185819070904646,
+      "uniqueID": "id-14",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 21
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.1328125,
+      "y": 0.6063569682151589,
+      "uniqueID": "id-20",
+      "name": "ds+mt",
+      "ioValues": [
+        {
+          "name": "ds",
+          "ioValue": 16
+        },
+        {
+          "name": "mt",
+          "ioValue": 5
+        }
+      ],
+      "currentEquation": "ds+mt"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.22604166666666664,
+      "y": 0.8068459657701711,
+      "uniqueID": "id-26",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 21
+        },
+        {
+          "name": "yDist",
+          "ioValue": 0
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    }
+  ],
+  "allConnectors": [
+    {
+      "ap2Name": "mt",
+      "ap1ID": "id-4",
+      "ap2ID": "id-20"
+    },
+    {
+      "ap2Name": "x length",
+      "ap1ID": "id-7",
+      "ap2ID": "id-10"
+    },
+    {
+      "ap2Name": "y length",
+      "ap1ID": "id-7",
+      "ap2ID": "id-10"
+    },
+    {
+      "ap2Name": "ds",
+      "ap1ID": "id-7",
+      "ap2ID": "id-20"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-10",
+      "ap2ID": "id-14"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-14",
+      "ap2ID": "id-26"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-20",
+      "ap2ID": "id-14"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-20",
+      "ap2ID": "id-26"
+    }
+  ],
+  "unitsKey": "MM",
+  "fileTypeVersion": 1,
+  "filetypeVersion": 1
 }
