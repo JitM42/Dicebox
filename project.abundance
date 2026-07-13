@@ -7,11 +7,11 @@
   "ioValues": [
     {
       "name": "Material_thickness",
-      "ioValue": 5
+      "ioValue": 3
     },
     {
       "name": "Dice_size",
-      "ioValue": 16
+      "ioValue": 17
     }
   ],
   "topLevel": true,
@@ -50,11 +50,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 16
+          "ioValue": 17
         },
         {
           "name": "y length",
-          "ioValue": 16
+          "ioValue": 17
         }
       ]
     },
@@ -70,7 +70,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": 21
+          "ioValue": 20
         },
         {
           "name": "yDist",
@@ -91,11 +91,11 @@
       "ioValues": [
         {
           "name": "ds",
-          "ioValue": 16
+          "ioValue": 17
         },
         {
           "name": "mt",
-          "ioValue": 5
+          "ioValue": 3
         }
       ],
       "currentEquation": "ds+mt"
@@ -112,7 +112,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": 21
+          "ioValue": 20
         },
         {
           "name": "yDist",
@@ -160,7 +160,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 21
+          "ioValue": 20
         },
         {
           "name": "zDist",
@@ -204,7 +204,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 21
+          "ioValue": 20
         },
         {
           "name": "zDist",
@@ -224,7 +224,7 @@
         },
         {
           "name": "xDist",
-          "ioValue": 68
+          "ioValue": 63
         },
         {
           "name": "yDist",
@@ -245,11 +245,11 @@
       "ioValues": [
         {
           "name": "ds",
-          "ioValue": 16
+          "ioValue": 17
         },
         {
           "name": "mt",
-          "ioValue": 5
+          "ioValue": 3
         }
       ],
       "currentEquation": "ds*3+mt*3+mt"
@@ -278,11 +278,11 @@
       "ioValues": [
         {
           "name": "x length",
-          "ioValue": 136
+          "ioValue": 126
         },
         {
           "name": "y length",
-          "ioValue": 68
+          "ioValue": 63
         }
       ]
     },
@@ -295,11 +295,11 @@
       "ioValues": [
         {
           "name": "ds",
-          "ioValue": 16
+          "ioValue": 17
         },
         {
           "name": "mt",
-          "ioValue": 5
+          "ioValue": 3
         }
       ],
       "currentEquation": "ds*6+mt*8"
@@ -313,11 +313,11 @@
       "ioValues": [
         {
           "name": "ds",
-          "ioValue": 16
+          "ioValue": 17
         },
         {
           "name": "mt",
-          "ioValue": 5
+          "ioValue": 3
         }
       ],
       "currentEquation": "ds*3+mt*4"
@@ -331,15 +331,15 @@
       "ioValues": [
         {
           "name": "x",
-          "ioValue": 136
+          "ioValue": 126
         },
         {
           "name": "ds",
-          "ioValue": 16
+          "ioValue": 17
         },
         {
           "name": "mt",
-          "ioValue": 5
+          "ioValue": 3
         }
       ],
       "currentEquation": "-x/2+ds/2+mt"
@@ -356,11 +356,11 @@
         },
         {
           "name": "xDist",
-          "ioValue": -55
+          "ioValue": -51.5
         },
         {
           "name": "yDist",
-          "ioValue": -21
+          "ioValue": -20
         },
         {
           "name": "zDist",
@@ -377,23 +377,23 @@
       "ioValues": [
         {
           "name": "y",
-          "ioValue": 68
+          "ioValue": 63
         },
         {
           "name": "ds",
-          "ioValue": 16
+          "ioValue": 17
         },
         {
           "name": "mt",
-          "ioValue": 5
+          "ioValue": 3
         }
       ],
       "currentEquation": "-y/2+(ds/2+mt)"
     },
     {
       "atomType": "Extrude",
-      "x": 0.6375,
-      "y": 0.23227383863080686,
+      "x": 0.6348958333333333,
+      "y": 0.30073349633251834,
       "uniqueID": "id-113",
       "ioValues": [
         {
@@ -402,7 +402,7 @@
         },
         {
           "name": "height",
-          "ioValue": 13
+          "ioValue": 11.5
         }
       ]
     },
@@ -415,11 +415,11 @@
       "ioValues": [
         {
           "name": "ds",
-          "ioValue": 16
+          "ioValue": 17
         },
         {
           "name": "mt",
-          "ioValue": 5
+          "ioValue": 3
         }
       ],
       "currentEquation": "ds/2+mt"
@@ -436,14 +436,14 @@
         },
         {
           "name": "height",
-          "ioValue": 16
+          "ioValue": 17
         }
       ]
     },
     {
       "atomType": "Move",
-      "x": 0.6182291666666666,
-      "y": 0.6748166259168704,
+      "x": 0.6260416666666667,
+      "y": 0.6723716381418092,
       "uniqueID": "id-127",
       "ioValues": [
         {
@@ -460,9 +460,109 @@
         },
         {
           "name": "zDist",
-          "ioValue": 5
+          "ioValue": 3
         }
       ]
+    },
+    {
+      "atomType": "Difference",
+      "x": 0.6744791666666667,
+      "y": 0.47432762836185816,
+      "uniqueID": "id-133",
+      "ioValues": [
+        {
+          "name": "retain",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "remove",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.56875,
+      "y": 0.8484107579462102,
+      "uniqueID": "id-137",
+      "name": "Molecule",
+      "ioValues": [
+        {
+          "name": "Dice_size",
+          "ioValue": 10
+        },
+        {
+          "name": "Material_thickness",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-139",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.14,
+          "uniqueID": "id-141",
+          "name": "Dice_size"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.4449877750611247,
+          "uniqueID": "id-144",
+          "name": "Material_thickness"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.12864583333333335,
+          "y": 0.21026894865525675,
+          "uniqueID": "id-147",
+          "name": "ds*6+mt*8+mt*2",
+          "ioValues": [
+            {
+              "name": "ds",
+              "ioValue": 1
+            },
+            {
+              "name": "mt",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "ds*6+mt*8+mt*2"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.1328125,
+          "y": 0.3960880195599022,
+          "uniqueID": "id-153",
+          "name": "x + y",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 1
+            },
+            {
+              "name": "y",
+              "ioValue": 1
+            }
+          ],
+          "currentEquation": "x + y"
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -692,6 +792,11 @@
       "ap2ID": "id-99"
     },
     {
+      "ap2Name": "retain",
+      "ap1ID": "id-113",
+      "ap2ID": "id-133"
+    },
+    {
       "ap2Name": "height",
       "ap1ID": "id-117",
       "ap2ID": "id-113"
@@ -700,6 +805,11 @@
       "ap2Name": "geometry",
       "ap1ID": "id-123",
       "ap2ID": "id-127"
+    },
+    {
+      "ap2Name": "remove",
+      "ap1ID": "id-127",
+      "ap2ID": "id-133"
     }
   ],
   "unitsKey": "MM",
