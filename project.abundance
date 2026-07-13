@@ -466,8 +466,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.6744791666666667,
-      "y": 0.47432762836185816,
+      "x": 0.6875,
+      "y": 0.48655256723716384,
       "uniqueID": "id-133",
       "ioValues": [
         {
@@ -482,18 +482,22 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.56875,
-      "y": 0.8484107579462102,
+      "x": 0.5796875,
+      "y": 0.8924205378973106,
       "uniqueID": "id-137",
       "name": "Molecule",
       "ioValues": [
         {
           "name": "Dice_size",
-          "ioValue": 10
+          "ioValue": 17
         },
         {
           "name": "Material_thickness",
-          "ioValue": 10
+          "ioValue": 3
+        },
+        {
+          "name": "Clearance",
+          "ioValue": 1
         }
       ],
       "topLevel": false,
@@ -526,42 +530,100 @@
         },
         {
           "atomType": "Equation",
-          "x": 0.12864583333333335,
-          "y": 0.21026894865525675,
+          "x": 0.13541666666666666,
+          "y": 0.22004889975550124,
           "uniqueID": "id-147",
-          "name": "ds*6+mt*8+mt*2",
+          "name": "ds*6+mt*8",
           "ioValues": [
             {
               "name": "ds",
-              "ioValue": 1
+              "ioValue": 17
             },
             {
               "name": "mt",
-              "ioValue": 1
+              "ioValue": 3
             }
           ],
-          "currentEquation": "ds*6+mt*8+mt*2"
+          "currentEquation": "ds*6+mt*8"
         },
         {
           "atomType": "Equation",
-          "x": 0.1328125,
-          "y": 0.3960880195599022,
+          "x": 0.1421875,
+          "y": 0.410757946210269,
           "uniqueID": "id-153",
-          "name": "x + y",
+          "name": "ds*3+mt*4+cl",
           "ioValues": [
             {
-              "name": "x",
-              "ioValue": 1
+              "name": "ds",
+              "ioValue": 17
             },
             {
-              "name": "y",
+              "name": "mt",
+              "ioValue": 3
+            },
+            {
+              "name": "cl",
               "ioValue": 1
             }
           ],
-          "currentEquation": "x + y"
+          "currentEquation": "ds*3+mt*4+cl"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.26197916666666665,
+          "y": 0.1687041564792176,
+          "uniqueID": "id-159",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 126
+            },
+            {
+              "name": "y length",
+              "ioValue": 64
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.0231,
+          "y": 0.5452322738386308,
+          "uniqueID": "id-163",
+          "name": "Clearance"
         }
       ],
-      "allConnectors": [],
+      "allConnectors": [
+        {
+          "ap2Name": "ds",
+          "ap1ID": "id-141",
+          "ap2ID": "id-147"
+        },
+        {
+          "ap2Name": "ds",
+          "ap1ID": "id-141",
+          "ap2ID": "id-153"
+        },
+        {
+          "ap2Name": "mt",
+          "ap1ID": "id-144",
+          "ap2ID": "id-147"
+        },
+        {
+          "ap2Name": "mt",
+          "ap1ID": "id-144",
+          "ap2ID": "id-153"
+        },
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-147",
+          "ap2ID": "id-159"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-153",
+          "ap2ID": "id-159"
+        }
+      ],
       "fileTypeVersion": 1
     }
   ],
@@ -605,6 +667,11 @@
       "ap2Name": "zDist",
       "ap1ID": "id-4",
       "ap2ID": "id-127"
+    },
+    {
+      "ap2Name": "Material_thickness",
+      "ap1ID": "id-4",
+      "ap2ID": "id-137"
     },
     {
       "ap2Name": "x length",
@@ -655,6 +722,11 @@
       "ap2Name": "height",
       "ap1ID": "id-7",
       "ap2ID": "id-123"
+    },
+    {
+      "ap2Name": "Dice_size",
+      "ap1ID": "id-7",
+      "ap2ID": "id-137"
     },
     {
       "ap2Name": "geometry",
