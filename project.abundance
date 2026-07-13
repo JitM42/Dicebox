@@ -466,8 +466,8 @@
     },
     {
       "atomType": "Difference",
-      "x": 0.6953125,
-      "y": 0.4963325183374083,
+      "x": 0.6927083333333334,
+      "y": 0.491442542787286,
       "uniqueID": "id-133",
       "ioValues": [
         {
@@ -482,8 +482,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.6859375,
-      "y": 0.8997555012224938,
+      "x": 0.6536458333333334,
+      "y": 0.8679706601466992,
       "uniqueID": "id-137",
       "name": "Molecule",
       "ioValues": [
@@ -885,11 +885,23 @@
         },
         {
           "ap2Name": "number or geometry",
-          "ap1ID": "id-206",
+          "ap1ID": "id-210",
           "ap2ID": "id-139"
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Assembly",
+      "x": 0.7421875,
+      "y": 0.6625916870415648,
+      "uniqueID": "id-216",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        }
+      ]
     }
   ],
   "allConnectors": [
@@ -1147,6 +1159,16 @@
       "ap2Name": "remove",
       "ap1ID": "id-127",
       "ap2ID": "id-133"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-133",
+      "ap2ID": "id-216"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-216",
+      "ap2ID": "id-2"
     }
   ],
   "unitsKey": "MM",
