@@ -327,14 +327,22 @@
       "x": 0.4911458333333334,
       "y": 0.36430317848410754,
       "uniqueID": "id-95",
-      "name": "-x/2",
+      "name": "-x/2+ds/2+mt",
       "ioValues": [
         {
           "name": "x",
           "ioValue": 136
+        },
+        {
+          "name": "ds",
+          "ioValue": 16
+        },
+        {
+          "name": "mt",
+          "ioValue": 5
         }
       ],
-      "currentEquation": "-x/2"
+      "currentEquation": "-x/2+ds/2+mt"
     },
     {
       "atomType": "Move",
@@ -348,17 +356,39 @@
         },
         {
           "name": "xDist",
-          "ioValue": -68
+          "ioValue": -55
         },
         {
           "name": "yDist",
-          "ioValue": 0
+          "ioValue": -23.5
         },
         {
           "name": "zDist",
           "ioValue": 0
         }
       ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.45364583333333336,
+      "y": 0.46210268948655253,
+      "uniqueID": "id-107",
+      "name": "-y/2+(ds+mt)/2",
+      "ioValues": [
+        {
+          "name": "y",
+          "ioValue": 68
+        },
+        {
+          "name": "ds",
+          "ioValue": 16
+        },
+        {
+          "name": "mt",
+          "ioValue": 5
+        }
+      ],
+      "currentEquation": "-y/2+(ds+mt)/2"
     }
   ],
   "allConnectors": [
@@ -381,6 +411,16 @@
       "ap2Name": "mt",
       "ap1ID": "id-4",
       "ap2ID": "id-83"
+    },
+    {
+      "ap2Name": "mt",
+      "ap1ID": "id-4",
+      "ap2ID": "id-95"
+    },
+    {
+      "ap2Name": "mt",
+      "ap1ID": "id-4",
+      "ap2ID": "id-107"
     },
     {
       "ap2Name": "x length",
@@ -411,6 +451,16 @@
       "ap2Name": "ds",
       "ap1ID": "id-7",
       "ap2ID": "id-83"
+    },
+    {
+      "ap2Name": "ds",
+      "ap1ID": "id-7",
+      "ap2ID": "id-95"
+    },
+    {
+      "ap2Name": "ds",
+      "ap1ID": "id-7",
+      "ap2ID": "id-107"
     },
     {
       "ap2Name": "geometry",
@@ -523,8 +573,18 @@
       "ap2ID": "id-73"
     },
     {
+      "ap2Name": "y",
+      "ap1ID": "id-83",
+      "ap2ID": "id-107"
+    },
+    {
       "ap2Name": "xDist",
       "ap1ID": "id-95",
+      "ap2ID": "id-99"
+    },
+    {
+      "ap2Name": "yDist",
+      "ap1ID": "id-107",
       "ap2ID": "id-99"
     }
   ],
