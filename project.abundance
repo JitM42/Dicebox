@@ -482,8 +482,8 @@
     },
     {
       "atomType": "Assembly",
-      "x": 0.7432291666666667,
-      "y": 0.684596577017115,
+      "x": 0.7885416666666667,
+      "y": 0.7163814180929096,
       "uniqueID": "id-216",
       "ioValues": [
         {
@@ -766,6 +766,30 @@
               "ioValue": 0
             }
           ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.5776041666666667,
+          "y": 0.43276283618581907,
+          "uniqueID": "id-395",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "xDist",
+              "ioValue": 0
+            },
+            {
+              "name": "yDist",
+              "ioValue": 0
+            },
+            {
+              "name": "zDist",
+              "ioValue": 23
+            }
+          ]
         }
       ],
       "allConnectors": [
@@ -890,13 +914,23 @@
           "ap2ID": "id-196"
         },
         {
+          "ap2Name": "zDist",
+          "ap1ID": "id-200",
+          "ap2ID": "id-395"
+        },
+        {
           "ap2Name": "geometry",
           "ap1ID": "id-206",
           "ap2ID": "id-210"
         },
         {
-          "ap2Name": "number or geometry",
+          "ap2Name": "geometry",
           "ap1ID": "id-210",
+          "ap2ID": "id-395"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-395",
           "ap2ID": "id-139"
         }
       ],
@@ -904,8 +938,8 @@
     },
     {
       "atomType": "Gcode",
-      "x": 0.7661458333333333,
-      "y": 0.8092909535452323,
+      "x": 0.8442708333333333,
+      "y": 0.8899755501222494,
       "uniqueID": "id-382",
       "ioValues": [
         {
