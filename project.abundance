@@ -31,14 +31,14 @@
     {
       "atomType": "Input",
       "x": 0.0231,
-      "y": 0.6259168704156479,
+      "y": 0.14,
       "uniqueID": "id-4",
       "name": "Material_thickness"
     },
     {
       "atomType": "Input",
       "x": 0.0231,
-      "y": 0.36430317848410754,
+      "y": 0.22400000000000003,
       "uniqueID": "id-7",
       "name": "Dice_size"
     },
@@ -481,6 +481,18 @@
       ]
     },
     {
+      "atomType": "Assembly",
+      "x": 0.7432291666666667,
+      "y": 0.684596577017115,
+      "uniqueID": "id-216",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": null
+        }
+      ]
+    },
+    {
       "atomType": "Molecule",
       "x": 0.6380208333333334,
       "y": 0.8704156479217604,
@@ -524,7 +536,7 @@
         {
           "atomType": "Input",
           "x": 0.0231,
-          "y": 0.4449877750611247,
+          "y": 0.22400000000000003,
           "uniqueID": "id-144",
           "name": "Material_thickness"
         },
@@ -591,7 +603,7 @@
         {
           "atomType": "Input",
           "x": 0.0231,
-          "y": 0.5452322738386308,
+          "y": 0.30800000000000005,
           "uniqueID": "id-163",
           "name": "Clearance"
         },
@@ -747,8 +759,7 @@
             },
             {
               "name": "y-axis degrees",
-              "ioValue": 180,
-              "currentEquation": "180"
+              "ioValue": 180
             },
             {
               "name": "z-axis degrees",
@@ -892,16 +903,40 @@
       "fileTypeVersion": 1
     },
     {
-      "atomType": "Assembly",
-      "x": 0.7421875,
-      "y": 0.6625916870415648,
-      "uniqueID": "id-216",
+      "atomType": "Gcode",
+      "x": 0.7661458333333333,
+      "y": 0.8092909535452323,
+      "uniqueID": "id-382",
       "ioValues": [
         {
-          "name": "Shape 1",
-          "ioValue": null
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 6
+        },
+        {
+          "name": "Passes",
+          "ioValue": 2
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0,
+          "currentEquation": "0"
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Dicebox",
+          "currentEquation": "Dicebox"
         }
-      ]
+      ],
+      "partName": "Dicebox",
+      "sortDirection": "Left"
     }
   ],
   "allConnectors": [
@@ -1169,6 +1204,11 @@
       "ap2Name": "number or geometry",
       "ap1ID": "id-216",
       "ap2ID": "id-2"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-216",
+      "ap2ID": "id-382"
     }
   ],
   "unitsKey": "MM",
