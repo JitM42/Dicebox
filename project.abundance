@@ -489,13 +489,17 @@
         {
           "name": "Shape 1",
           "ioValue": null
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": null
         }
       ]
     },
     {
       "atomType": "Molecule",
-      "x": 0.6380208333333334,
-      "y": 0.8704156479217604,
+      "x": 0.5833333333333334,
+      "y": 0.8141809290953546,
       "uniqueID": "id-137",
       "name": "Molecule",
       "ioValues": [
@@ -938,8 +942,8 @@
     },
     {
       "atomType": "Gcode",
-      "x": 0.8442708333333333,
-      "y": 0.8899755501222494,
+      "x": 0.8151041666666667,
+      "y": 0.3471882640586797,
       "uniqueID": "id-382",
       "ioValues": [
         {
@@ -971,6 +975,48 @@
       ],
       "partName": "Dicebox",
       "sortDirection": "Left"
+    },
+    {
+      "atomType": "Move",
+      "x": 0.69375,
+      "y": 0.8850855745721272,
+      "uniqueID": "id-402",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": 69
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.5458333333333334,
+      "y": 0.9242053789731051,
+      "uniqueID": "id-408",
+      "name": "(dt*3+mt*4+mt*2)/1",
+      "ioValues": [
+        {
+          "name": "dt",
+          "ioValue": 17
+        },
+        {
+          "name": "mt",
+          "ioValue": 3
+        }
+      ],
+      "currentEquation": "(dt*3+mt*4+mt*2)/1"
     }
   ],
   "allConnectors": [
@@ -1018,6 +1064,11 @@
       "ap2Name": "Material_thickness",
       "ap1ID": "id-4",
       "ap2ID": "id-137"
+    },
+    {
+      "ap2Name": "mt",
+      "ap1ID": "id-4",
+      "ap2ID": "id-408"
     },
     {
       "ap2Name": "x length",
@@ -1073,6 +1124,11 @@
       "ap2Name": "Dice_size",
       "ap1ID": "id-7",
       "ap2ID": "id-137"
+    },
+    {
+      "ap2Name": "dt",
+      "ap1ID": "id-7",
+      "ap2ID": "id-408"
     },
     {
       "ap2Name": "geometry",
@@ -1235,14 +1291,29 @@
       "ap2ID": "id-216"
     },
     {
+      "ap2Name": "geometry",
+      "ap1ID": "id-133",
+      "ap2ID": "id-382"
+    },
+    {
       "ap2Name": "number or geometry",
       "ap1ID": "id-216",
       "ap2ID": "id-2"
     },
     {
       "ap2Name": "geometry",
-      "ap1ID": "id-216",
-      "ap2ID": "id-382"
+      "ap1ID": "id-137",
+      "ap2ID": "id-402"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-402",
+      "ap2ID": "id-216"
+    },
+    {
+      "ap2Name": "yDist",
+      "ap1ID": "id-408",
+      "ap2ID": "id-402"
     }
   ],
   "unitsKey": "MM",
