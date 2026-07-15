@@ -491,7 +491,7 @@
           "ioValue": null
         },
         {
-          "name": "Shape 2",
+          "name": "Shape 3",
           "ioValue": null
         }
       ]
@@ -960,7 +960,7 @@
         },
         {
           "name": "Speed",
-          "ioValue": 1500
+          "ioValue": 1000
         },
         {
           "name": "Cut Through",
@@ -969,8 +969,62 @@
         },
         {
           "name": "Part Name",
-          "ioValue": "Dicebox",
-          "currentEquation": "Dicebox"
+          "ioValue": "Dicebox_tray",
+          "currentEquation": "Dicebox_tray"
+        }
+      ],
+      "partName": "Dicebox",
+      "sortDirection": "Left"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.5458333333333334,
+      "y": 0.9242053789731051,
+      "uniqueID": "id-408",
+      "name": "(dt*3+mt*4+mt*2)/1",
+      "ioValues": [
+        {
+          "name": "dt",
+          "ioValue": 17
+        },
+        {
+          "name": "mt",
+          "ioValue": 3
+        }
+      ],
+      "currentEquation": "(dt*3+mt*4+mt*2)/1"
+    },
+    {
+      "atomType": "Gcode",
+      "x": 0.7734374999999999,
+      "y": 0.8997555012224938,
+      "uniqueID": "id-414",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "Tool Size",
+          "ioValue": 6
+        },
+        {
+          "name": "Passes",
+          "ioValue": 4,
+          "currentEquation": "4"
+        },
+        {
+          "name": "Speed",
+          "ioValue": 1500
+        },
+        {
+          "name": "Cut Through",
+          "ioValue": 0
+        },
+        {
+          "name": "Part Name",
+          "ioValue": "Dicebox_box",
+          "currentEquation": "Dicebox_box"
         }
       ],
       "partName": "Dicebox",
@@ -978,8 +1032,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.69375,
-      "y": 0.8850855745721272,
+      "x": 0.703125,
+      "y": 0.7408312958435208,
       "uniqueID": "id-402",
       "ioValues": [
         {
@@ -999,24 +1053,6 @@
           "ioValue": 0
         }
       ]
-    },
-    {
-      "atomType": "Equation",
-      "x": 0.5458333333333334,
-      "y": 0.9242053789731051,
-      "uniqueID": "id-408",
-      "name": "(dt*3+mt*4+mt*2)/1",
-      "ioValues": [
-        {
-          "name": "dt",
-          "ioValue": 17
-        },
-        {
-          "name": "mt",
-          "ioValue": 3
-        }
-      ],
-      "currentEquation": "(dt*3+mt*4+mt*2)/1"
     }
   ],
   "allConnectors": [
@@ -1306,14 +1342,19 @@
       "ap2ID": "id-402"
     },
     {
-      "ap2Name": "Shape 2",
-      "ap1ID": "id-402",
-      "ap2ID": "id-216"
+      "ap2Name": "geometry",
+      "ap1ID": "id-137",
+      "ap2ID": "id-414"
     },
     {
       "ap2Name": "yDist",
       "ap1ID": "id-408",
       "ap2ID": "id-402"
+    },
+    {
+      "ap2Name": "Shape 3",
+      "ap1ID": "id-402",
+      "ap2ID": "id-216"
     }
   ],
   "unitsKey": "MM",
